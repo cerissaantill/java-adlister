@@ -10,8 +10,6 @@ import java.io.PrintWriter;
 public class HelloWorldServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        System.out.println("this works ");
-//        String name = request.getParameter( "name");
         response.setContentType("text/html");
         PrintWriter output = response.getWriter();
         output.println("<h1>Hello, World!</h1>");
