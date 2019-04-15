@@ -17,5 +17,4 @@ public class HelloWorldServlet extends HttpServlet {
         output.println("<h1>Hello, World!</h1>");
     }
 
-
 }
