@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%! int counter = 0; %>
 <% counter += 1; %>
-<% String name = "Zion"; %>
+<% String name; %>
 
 <html>
     <head>
@@ -18,11 +18,16 @@
     </head>
 
     <body>
-    <%@ include file="partials/navbar.jsp"%>
+    <%@ include file="partials/navbar.jsp" %>     <!-- link ext files -->
 
     <h1>The current count is <%= counter %>.</h1>
 
-    <h2 class="text-danger">Hello <%= name %>!</h2>
+    <% name = request.getParameter("name");
+        if (name == null) name = "Codeup"; %>
+
+    <h2 class="text-danger">Hello <%= name %>!</h2>  <!-- expression language on var name -->
+
+    <p>Your name has <%= name.length() %> letters in it.</p>
 
 
 
