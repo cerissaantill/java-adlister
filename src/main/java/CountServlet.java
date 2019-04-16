@@ -16,8 +16,9 @@ public class CountServlet extends HttpServlet {
 
         count++;
         response.setContentType("text/html");
-        response.getWriter().println("<h2>This page accessed " + count + " time(s)</h2>");
-
+        response.getWriter().println("<html><head><title></title></head><body>");
+        response.getWriter().println("<h2>This page accessed " + this.count + " time(s)</h2>");
+        response.getWriter().println("</body></html>");
 
 
     }  // public void doGet
