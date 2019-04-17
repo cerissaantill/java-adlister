@@ -17,9 +17,9 @@
     <body>
         <table>
             <thead>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Picture</th>
+                <th>------Name------</th>
+                <th>------Age-------</th>
+                <th>-----Picture----</th>
             </thead>
 
             <c:forEach var="cat" items="${cats}">
